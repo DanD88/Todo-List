@@ -20,24 +20,26 @@ function TodoApp() {
     setTasks(newTasks);
   }
 
+  
+
   return (
     <div className="container">
-      <h1>To-Do List</h1>
-      <form onSubmit={handleSubmit}>
+      <h1>TODO List</h1>
+      <form className='form-section' onSubmit={handleSubmit}>
         <input
           type="text"
           value={currentTask}
           onChange={e => setCurrentTask(e.target.value)}
           placeholder="Add a task"
         />
-        <button type="submit">Add Task</button>
+        <button className='submit' type="submit">Add Task</button>
       </form>
       <div>
         <ul>
           {tasks.map((task, index) => (
             <li key={index}>
               {task}
-              <button onClick={() => handleDelete(index)}>Delete</button>
+              <button className='delete-btn' onClick={() => handleDelete(index)}>Remove</button>
             </li>
           ))}
         </ul>
@@ -45,5 +47,6 @@ function TodoApp() {
     </div>
   );
 }
+
 
 export default TodoApp;
