@@ -4,13 +4,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0D192B;
+    background-color: hsl(237, 14%, 26%);
   }
+
+h1 {
+    color: #ffffff;
+}
+
   .container {
     width: 800px;
     /* margin: 0 auto; */
     margin-top: 20px;
-    background-color: #133c75;
+    background-color: hsl(234, 11%, 52%);
     padding: 1rem;
     border-radius: .5rem;
   }
